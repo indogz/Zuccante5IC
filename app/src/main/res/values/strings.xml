@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="domanda">Domanda</string>
+    <string name="btnFacile">QuizFacile</string>
+    <string name="btnDifficile">QuizDifficile</string>
+    <string name="btnTermina">Termina</string>
+    <string name="d1">Quanto è stata scoperta l America da quel simpaticone di Cristoforo Colombo?</string>
+</resources>
