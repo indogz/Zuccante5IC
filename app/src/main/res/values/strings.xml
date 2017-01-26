@@ -29,15 +29,16 @@
     <string name="opzione4.3">12</string>
     <string name="opzione4.4">Guarda che non si va in overflow ;-)</string>
 
+
+
+
     <string name="d1">Perchè l intent di questo programma non legge il messaggio extra? </string>
-    <string name="d2">Perchè l omino di android è verde?</string>
-
-
     <string name="o1.1">Solo Dio lo sa</string>
     <string name="o1.2">Perchè Allah vuole</string>
     <string name="o1.3">Per un preciso motivo tecnico</string>
     <string name="o1.4">Nessuna delle precedenti</string>
 
+    <string name="d2">Perchè l omino di android è verde?</string>
     <string name="o2.1">Per fare invidia a Bill Gates</string>
     <string name="o2.2">Perchè Allah vuole </string>
     <string name="o2.3">Perchè il verde ricorda le praterie del Missouri</string>
