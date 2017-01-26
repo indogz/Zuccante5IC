@@ -16,21 +16,15 @@ public class ActivityTwo extends AppCompatActivity {
 
     TextView result;
 
-    private final  String risposteCorrette = "1441";
+    private final String risposteCorrette = "1441";
     String risposteDate = "";
     Button btnTermina;
-
-
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_two);
-
-        for (int i=0; i<risposteCorrette.length();i++){
-            risposteDate=risposteDate+" ";
-        }
 
 
         btnTermina = (Button) findViewById(R.id.buttonTermina);
@@ -43,15 +37,22 @@ public class ActivityTwo extends AppCompatActivity {
 
         btnTermina.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                if (risposteDate.equals(risposteCorrette)) {
-                    Toast toast = Toast.makeText(context, "CORRETTO", duration);
-                    toast.show();
-                } else {
-                    Toast toast = Toast.makeText(context, "SBAGLIATO", duration);
-                    toast.show();
-                }
+                result.setText(getResult());
+
+                Intent i = new Intent();
+                i.putExtra("isOk", getResult());
+                ActivityTwo.this.setResult(RESULT_OK, i);
+                ActivityTwo.this.finish();
             }
         });
+    }
+
+    public String getResult() {
+        String res;
+        if (risposteCorrette.equals(risposteDate)) res = "Test corretto";
+        else res = "Test errato";
+        return res;
+
     }
 
 

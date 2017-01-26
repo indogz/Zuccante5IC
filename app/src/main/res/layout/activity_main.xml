@@ -17,6 +17,13 @@
         android:stretchColumns="*"
         android:weightSum="2" >
 
+        <TableRow>
+            <TextView
+                android:textColor="@color/green"
+                android:text="Risposta: "
+                android:id="@+id/mainResult"/>
+        </TableRow>
+
         <TableRow android:layout_weight="1" >
             <Button
                 android:id="@+id/buttonQuiz1"
